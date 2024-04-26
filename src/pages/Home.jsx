@@ -1,5 +1,12 @@
+import Event from "./Event";
+
 const Home = () => {
-    return (<div>homepage</div>  );
+    return (
+      <div>
+        <p>homepage</p>
+        <Event/>
+      </div>
+    );
 }
  
 export default Home;
