@@ -1,6 +1,6 @@
 // HomePage.js
 
-import EventCard from "./EventCard";
+import EventCard from "./card/EventCard";
 
 const events = [
   {
