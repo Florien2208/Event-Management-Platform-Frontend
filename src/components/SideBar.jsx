@@ -1,20 +1,15 @@
-import bus from "../images/Logo-4x.png"
+import bus from "../images/Logo-4x.png";
 
 import { HiViewGrid } from "react-icons/hi";
-import { SiGooglelens } from "react-icons/si";
-import { RiBookReadLine } from "react-icons/ri";
-import { RiArrowDropDownLine } from "react-icons/ri";
+
 import { HiMiniBars4 } from "react-icons/hi2";
 import { useState } from "react";
 
 import { BsDatabase } from "react-icons/bs";
 import { GrDeliver } from "react-icons/gr";
-import { MdOutlineSettings } from "react-icons/md";
-import { MdOutlineHelpCenter } from "react-icons/md";
-import { CiViewList, CiCalendarDate } from "react-icons/ci";
-import { RiMessage2Line } from "react-icons/ri";
+
 import { Link } from "react-router-dom";
-import { MdOutlineSubscriptions } from "react-icons/md";
+
 function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
 

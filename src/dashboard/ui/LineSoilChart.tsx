@@ -1,3 +1,4 @@
+import React from "react";
 import {
   AreaChart,
   Area,
@@ -17,13 +18,7 @@ const data = [
 
 import { Text } from "recharts";
 
-interface CustomAxisTickProps {
-  x: number;
-  y: number;
-  payload: { value: string };
-}
-
-const renderCustomAxisTick = ({ x, y, payload }: CustomAxisTickProps) => {
+const renderCustomAxisTick = ({ x, y, payload }) => {
   return (
     <Text x={x} y={y} dy={16} textAnchor="middle" fill="#666" fontSize="12px">
       {payload.value}
