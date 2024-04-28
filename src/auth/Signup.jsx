@@ -1,9 +1,10 @@
-import { useId } from "react";
+import { useId , useState} from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Input = ({
   type = "text",
@@ -46,14 +47,22 @@ Input.propTypes = {
 };
 
 const Signup = () => {
+  const [error, setError] = useState(null);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+  
 
-  const onSubmit = async () => {
-    // Handle form submission
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post("/api/signup", data); // Adjust the API endpoint accordingly
+      console.log("Signup successful:", response.data);
+      // Redirect or show a success message
+    } catch (error) {
+      setError(error.response.data.message);
+    }
   };
 
   return (
@@ -114,6 +123,7 @@ const Signup = () => {
             >
               Sign Up
             </button>
+            {error && <p className="text-red-500 text-sm">{error}</p>}
           </form>
         </div>
       </div>

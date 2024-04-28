@@ -34,11 +34,9 @@ function SideBar() {
           isOpen ? "block" : "hidden"
         }`}
       >
-
         <div className=" top-[50px] absolute flex-col justify-start items-center gap-4 inline-flex">
           <div className="w-36 h-[52px]  bg-white rounded-2xl border border-gray-200">
             <img src={bus} alt="bazfarm" />
-       
           </div>
           <div className="flex-col ml-3  justify-start items-start gap-3 flex ">
             <div className="flex-col justify-start items-start gap-0.1 flex">
@@ -59,7 +57,7 @@ function SideBar() {
                     </div>
                   </div>
                 </Link>
-                <Link to="farm">
+                <Link to="allEvent">
                   <div className="self-stretch mt-5 h-6 w-48 rounded-[8px] justify-start items-center gap-2.5 inline-flex hover:border-2 hover:border-emerald-800">
                     <div className="w-5 h-5 relative" />
                     <div className="text-base">
@@ -70,7 +68,7 @@ function SideBar() {
                     </div>
                   </div>
                 </Link>
-                <Link to="Reporting">
+                <Link to="AllUsers">
                   <div className="self-stretch mt-5 hover:text-green-800 h-6 w-48 rounded-[8px] justify-start items-center gap-2.5 inline-flex hover:border-2 hover:border-emerald-800">
                     <div className="w-5 h-5 relative" />
                     <div className="text-base">
@@ -83,12 +81,23 @@ function SideBar() {
                     </div>
                   </div>
                 </Link>
+                <Link to="bookings">
+                  <div className="self-stretch mt-5 hover:text-green-800 h-6 w-48 rounded-[8px] justify-start items-center gap-2.5 inline-flex hover:border-2 hover:border-emerald-800">
+                    <div className="w-5 h-5 relative" />
+                    <div className="text-base">
+                      <BsDatabase />
+                    </div>
+                    <div className="grow flex text-base gap-3 hover:text-green-800 shrink basis-0 text-slate-800 font-medium font-['Inter']">
+                      <div className="">
+                        <b>Bookings</b>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
-            
           </div>
         </div>
-        
       </div>
     </div>
   );

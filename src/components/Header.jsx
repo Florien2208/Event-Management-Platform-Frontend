@@ -1,13 +1,11 @@
-// Header.js
 import  { useState } from "react";
 import Log from "../images/Logo-4x.png";
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Dummy function for login
+  
   const handleLogin = () => {
-    // Perform login logic here
-    // For demonstration purposes, just toggling isLoggedIn state
+  
     setIsLoggedIn(!isLoggedIn);
   };
 

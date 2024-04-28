@@ -6,20 +6,18 @@ import {
   getPaginationRowModel,
   getSortedRowModel,
   getFilteredRowModel,
-
 } from "@tanstack/react-table";
-
 
 import cropdata from "./data.json";
 import { useMemo } from "react";
 import { FaSearch, FaCalendarAlt, FaAngleDown } from "react-icons/fa";
-import { FaRegEye,  } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 // import Modal from "./Modal";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
 
-const Allevent = () => {
+const AllUsers = () => {
   const data = useMemo(() => cropdata, []);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -38,27 +36,23 @@ const Allevent = () => {
       accessorKey: "id",
     },
     {
-      header: "Event Title",
+      header: "Full Name",
       accessorKey: "crop_name",
     },
     {
-      header: "Description",
+      header: "Email",
       accessorKey: "farm",
     },
     {
-      header: "Photo",
+      header: "Phone Number",
       accessorKey: "area",
     },
     {
       header: "Location",
-      accessorKey: "planting_date",
-    },
-    {
-      header: "Date",
       accessorKey: "current_status",
     },
     {
-      header: "Available tickets",
+      header: "Role",
       accessorKey: "harvest_date",
     },
     {
@@ -245,4 +239,4 @@ const Allevent = () => {
   );
 };
 
-export default Allevent;
+export default AllUsers;

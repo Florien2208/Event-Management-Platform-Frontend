@@ -8,8 +8,10 @@ import ContactUs from "./pages/Contactus";
 import AboutUs from "./pages/AboutUs";
 import ProfilePage from "./pages/Profile";
 import AdminLayout from "./layout/AdminLayout";
-import Overview from "./dashboard/Overview";
 import Allevent from "./dashboard/Allevent";
+import AllUsers from "./dashboard/AllUsers";
+import Bookings from "./dashboard/Bookings";
+import Overview from "./dashboard/Overview";
 
 export default function App() {
   return (
@@ -22,12 +24,12 @@ export default function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/profile" element={<ProfilePage />} />
-        </Route>
-        <Route>
-          <Route path="dashboard" element={<AdminLayout />} />
-          <Route path="/overview" element={<Overview/>}/>
-          <Route path="/allevent" element={<Allevent/>}/>
-
+        </Route>       
+          <Route path="dashboard" element={<AdminLayout />} >
+          <Route index element={<Overview/>}/>
+          <Route path="allEvent" element={<Allevent/>}/>
+          <Route path="AllUsers" element={<AllUsers/>}/>
+          <Route path="bookings" element={<Bookings/>}/>
           <Route
             path="*"
             element={

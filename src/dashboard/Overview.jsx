@@ -1,6 +1,6 @@
 import { FaCalendarAlt, FaShoppingCart } from "react-icons/fa";
-import LineSoilChart from "@/components/LineSoilChart";
-import PiChart from "@/components/PiChart";
+import LineSoilChart from "./ui/LineSoilChart";
+import PiChart from "./ui/PiChart";
 
 const Overview = () => {
   return (
