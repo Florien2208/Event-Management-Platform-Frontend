@@ -1,4 +1,4 @@
-import { useId , useState} from "react";
+import  { useState, useId } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -53,13 +53,11 @@ const Signup = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("/api/signup", data); // Adjust the API endpoint accordingly
+      const response = await axios.post("/api/signup", data);
       console.log("Signup successful:", response.data);
-      // Redirect or show a success message
     } catch (error) {
       setError(error.response.data.message);
     }
