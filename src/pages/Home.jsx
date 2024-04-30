@@ -4,6 +4,7 @@ import Event from "./Event";
 const Home = () => {
     return (
       <>
+      {/* home paga */}
         <div
           className="h-80 items-center content-center"
           style={{
