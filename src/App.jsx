@@ -12,7 +12,7 @@ import Allevent from "./dashboard/Allevent";
 import AllUsers from "./dashboard/AllUsers";
 import Bookings from "./dashboard/Bookings";
 import Overview from "./dashboard/Overview";
-
+// app.tsx
 export default function App() {
   return (
     <BrowserRouter>
