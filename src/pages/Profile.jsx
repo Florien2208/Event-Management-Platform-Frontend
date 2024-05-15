@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Profile = () => {
-  const [userData, setUserData] = useState({
+  const [userData] = useState({
     firstName: "John",
     lastName: "Doe",
     email: "john.doe@example.com",
