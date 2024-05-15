@@ -35,7 +35,7 @@ export default function App() {
             element={
               <>
                 <h1>Page not Found</h1>
-                <h2>your do not have access to this account</h2>
+                <h2>your do not have access to this page</h2>
                 <Link to={"/"}>Back to home</Link>
               </>
             }
