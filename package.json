@@ -21,7 +21,8 @@
     "react-icons": "^5.1.0",
     "react-router-dom": "^6.23.0",
     "rechart": "^0.0.1",
-    "recharts": "^2.12.6"
+    "recharts": "^2.12.6",
+    "session": "^0.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
